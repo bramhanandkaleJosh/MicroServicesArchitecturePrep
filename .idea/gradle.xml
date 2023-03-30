@@ -4,15 +4,6 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/UserService" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/UserService" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/adminService" />
         <option name="modules">
           <set>
@@ -26,6 +17,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/docService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/userService" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/userService" />
           </set>
         </option>
       </GradleProjectSettings>
