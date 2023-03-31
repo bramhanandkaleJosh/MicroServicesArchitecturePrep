@@ -4,34 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="initial commit for checking">
-      <change afterPath="$PROJECT_DIR$/userService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/UserServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/test/java/com/userService/userService/UserServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="setting up user service">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/dto/AddUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/AddUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/impl/AddUserImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userService/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/test/java/com/userService/UserService/UserServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +57,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -88,11 +73,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -108,21 +97,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/josh/SGPrep/MicroServicesArchitecturePrep/userService/settings.gradle.kts",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/josh/SGPrep/MicroServicesArchitecturePrep/userService/settings.gradle.kts&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.AdminServiceApplication">
+}</component>
+  <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="AdminServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.adminService.adminService.AdminServiceApplication" />
       <module name="adminService.main" />
@@ -149,20 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.userService.UserService.UserServiceApplication" />
-      <module name="UserService.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.userService.UserService.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.userService.userService.UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.userService.userService.UserServiceApplication" />
       <module name="userService.main" />
       <extension name="coverage">
@@ -171,13 +147,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="build.gradle.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="MicroServicesArchitecturePrep" />
-      <option name="filePath" value="$PROJECT_DIR$/UserService/build.gradle.kts" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,10 +159,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AdminServiceApplication" />
-        <item itemvalue="Application.com.userService.userService.UserServiceApplication" />
-        <item itemvalue="Kotlin script (Beta).build.gradle.kts" />
-        <item itemvalue="Application.DocServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.DocServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -229,8 +201,25 @@
       <option name="project" value="LOCAL" />
       <updated>1680158790079</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="setting up user service">
+      <created>1680166986560</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680166986560</updated>
+    </task>
+    <task id="LOCAL-00006" summary="setting up user service">
+      <created>1680167045926</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680167045926</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -250,6 +239,7 @@
     </ignored-roots>
     <MESSAGE value="initial commit" />
     <MESSAGE value="initial commit for checking" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit for checking" />
+    <MESSAGE value="setting up user service" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting up user service" />
   </component>
 </project>
