@@ -11,6 +11,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common" target="17" />
+      <module name="common.main" target="17" />
+      <module name="common.test" target="17" />
+      <module name="demo" target="17" />
+      <module name="demo.main" target="17" />
+      <module name="demo.test" target="17" />
       <module name="main" target="17" />
       <module name="main.main" target="17" />
       <module name="main.test" target="17" />

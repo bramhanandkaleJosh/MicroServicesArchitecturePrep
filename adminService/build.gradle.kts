@@ -16,8 +16,11 @@ configurations {
 
 repositories {
 	mavenCentral()
+	mavenLocal()
+//	flatDir {
+//		("common")
+//	}
 }
-
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
@@ -27,6 +30,9 @@ dependencies {
 	runtimeOnly("com.mysql:mysql-connector-j")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation(project(":common"))
+//	implementation(project(":userService"))
+//	implementation(project(":docService"))
 }
 
 tasks.withType<Test> {

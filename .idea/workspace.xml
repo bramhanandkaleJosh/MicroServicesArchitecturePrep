@@ -5,47 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="initial commit for checking">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/test/java/com/userService/UserService/UserServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/AdminServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/test/java/com/adminService/adminService/AdminServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/DocServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/test/java/com/docService/docService/DocServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinScripting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/adminService.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/common.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/docService.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/userService.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/dto/AdminDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/dto/ResponseVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/controllers/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/dao/AdminDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/dto/AdminDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/dto/ResponseVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/entities/AdminRecords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/dto/AdminDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/dto/ResponseVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/dao/DocumentsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/dto/AdminDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/dto/ResponseVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/entities/Documents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminService/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/main/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/adminService/main/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/main/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/adminService/main/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/test/java/com/adminService/main/MainApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/test/java/com/adminService/main/MainApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/AdminServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/AdminServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/docService/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +60,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/UserService">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/adminService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/common">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/docService">
@@ -67,6 +80,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$/adminService">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/data/untitled">
           <activation />
         </task>
         <projects_view>
@@ -81,6 +97,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -92,6 +109,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.persistence/jakarta.persistence-api/3.1.0/8d479b8d71750d5c2b8e58034b80231994cba6ec/jakarta.persistence-api-3.1.0-sources.jar!/jakarta/persistence/Basic.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -123,14 +143,41 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/josh/SGPrep/MicroServicesArchitecturePrep/docService/settings.gradle.kts",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "C:/Users/josh/IdeaProjects/MicroServicesArchitecturePrep/UserService/src/main/java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DocServiceApplication">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\josh\IdeaProjects\MicroServicesArchitecturePrep\UserService\src\main\java" />
+      <recent name="C:\Users\josh\IdeaProjects\MicroServicesArchitecturePrep\docService\src\main\java" />
+      <recent name="C:\Users\josh\IdeaProjects\MicroServicesArchitecturePrep\adminService\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="entities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AdminServiceApplication">
+    <configuration name="AdminServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.adminService.adminService.AdminServiceApplication" />
+      <module name="adminService.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adminService.adminService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DocServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.docService.docService.DocServiceApplication" />
       <module name="docService.main" />
@@ -159,7 +206,7 @@
     </configuration>
     <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.userService.UserService.UserServiceApplication" />
-      <module name="UserService.main" />
+      <module name="userService.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.userService.UserService.*" />
@@ -172,6 +219,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AdminServiceApplication" />
         <item itemvalue="Application.DocServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.MainApplication" />
@@ -179,6 +227,14 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StandaloneScriptsStorage">
+    <option name="files">
+      <set>
+        <option value="$PROJECT_DIR$/build.gradle.kts" />
+        <option value="$PROJECT_DIR$/settings.gradle.kts" />
+      </set>
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="" />
