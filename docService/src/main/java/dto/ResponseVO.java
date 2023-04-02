@@ -18,4 +18,6 @@ public class ResponseVO {
 
     private JsonNode data;
 
+    private String message;
+
 }

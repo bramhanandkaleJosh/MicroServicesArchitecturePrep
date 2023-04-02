@@ -20,4 +20,8 @@ public class AdminDto {
     private Instant lastMessageTime;
     
     private String document;
+
+    private String documentType;
+
+    private Long userId;
 }

@@ -21,5 +21,7 @@ public class AdminDto {
     
     private String document;
 
+    private String documentType;
+
     private Long userId;
 }

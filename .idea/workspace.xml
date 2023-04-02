@@ -4,55 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="initial commit for checking">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinScripting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/adminService.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/common.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/docService.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/userService.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/dto/AdminDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/dto/ResponseVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/controllers/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/dao/AdminDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/dto/AdminDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/dto/ResponseVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/entities/AdminRecords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/service/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/dto/AdminDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/dto/ResponseVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/dao/DocumentsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/dto/AdminDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/dto/ResponseVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/entities/Documents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="admin and user services added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/dto/AdminDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/AdminServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/AdminServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/docService/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/dto/AdminDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/dto/AdminDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dto/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/dto/ResponseVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +49,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="adminService" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -164,7 +131,7 @@
       <recent name="entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AdminServiceApplication">
+  <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="AdminServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.adminService.adminService.AdminServiceApplication" />
       <module name="adminService.main" />
@@ -217,8 +184,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests in 'userService'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UserService" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'userService'" />
         <item itemvalue="Application.AdminServiceApplication" />
         <item itemvalue="Application.DocServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
@@ -271,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680158790079</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="admin and user services added">
+      <created>1680252876206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680252876206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +288,7 @@
     </ignored-roots>
     <MESSAGE value="initial commit" />
     <MESSAGE value="initial commit for checking" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit for checking" />
+    <MESSAGE value="admin and user services added" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin and user services added" />
   </component>
 </project>

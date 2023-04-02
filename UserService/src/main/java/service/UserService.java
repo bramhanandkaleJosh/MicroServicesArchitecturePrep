@@ -12,10 +12,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
-
 import java.time.Clock;
 import java.time.Instant;
 import java.time.ZoneId;
+import java.util.Map;
+
+
 
 @Service
 @Slf4j
@@ -38,13 +40,16 @@ public class UserService {
         } catch (Exception e){
             log.info("Exception occurred in UserService :: createUserService()", e);
         }
+
         return responseVO;
     }
 
-    public ResponseVO rollbackUserService(Long userId) {
+    public ResponseVO rollbackUserService(Map<String, String> input) {
         ResponseVO responseVO = new ResponseVO("Failed", 400, null ,null);
         try{
-            userDao.deleteById(userId);
+            userDao.deleteById(Long.parseLong(input.get("userId")));
+            input.put("Status", "respective userId is rollback done due to transaction failure in doc service");
+            responseVO.setData(objectMapper.convertValue(input, JsonNode.class));
         } catch (Exception e){
             log.info("Exception occurred in UserService :: rollbackUserService()", e);
         }

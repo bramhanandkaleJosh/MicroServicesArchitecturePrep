@@ -18,4 +18,8 @@ public class AdminDto {
     private String surname;
     
     private String document;
+
+    private Long userId;
+
+    private String documentType;
 }

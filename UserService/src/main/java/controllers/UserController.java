@@ -24,7 +24,7 @@ public class UserController {
     }
 
     @PostMapping(value = "/rollback")
-    public ResponseEntity<?> rollbackUser(@RequestBody Map<String, Long> input){
-        return new ResponseEntity<>(userService.rollbackUserService(input.get("userId")), HttpStatus.OK);
+    public ResponseEntity<?> rollbackUser(@RequestBody Map<String, String> input){
+        return new ResponseEntity<>(userService.rollbackUserService(input), HttpStatus.OK);
     }
 }
