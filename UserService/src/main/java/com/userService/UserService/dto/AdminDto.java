@@ -1,4 +1,4 @@
-package dto;
+package com.userService.UserService.dto;
 
 
 import jakarta.persistence.Basic;

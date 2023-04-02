@@ -1,6 +1,6 @@
-package dao;
+package com.userService.UserService.dao;
 
-import entities.User;
+import com.userService.UserService.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserDao extends JpaRepository<User, Long> {

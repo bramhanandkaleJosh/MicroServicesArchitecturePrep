@@ -1,8 +1,7 @@
-package entities;
+package com.userService.UserService.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.time.Instant;
 
 @RequiredArgsConstructor
@@ -13,7 +12,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private long userId;
 
     @NonNull
     @Basic

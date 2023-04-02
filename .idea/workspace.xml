@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="admin and user services added">
+    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="fixes added">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/dto/AdminDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dto/AdminDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/dto/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dto/ResponseVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/dto/AdminDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/dto/AdminDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dto/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/dto/ResponseVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,12 +205,21 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Gradle.Tests in 'userService'" />
         <item itemvalue="Application.AdminServiceApplication" />
         <item itemvalue="Application.DocServiceApplication" />
-        <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.MainApplication" />
       </list>
     </recent_temporary>
@@ -267,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680252876206</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixes added">
+      <created>1680437255160</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680437255160</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,6 +305,38 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="initial commit for checking" />
     <MESSAGE value="admin and user services added" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin and user services added" />
+    <MESSAGE value="fixes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
