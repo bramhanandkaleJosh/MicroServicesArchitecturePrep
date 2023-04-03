@@ -1,10 +1,10 @@
-package com.docService.docService;
+package com.adminService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DocServiceApplicationTests {
+class AdminServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package dto;
+package com.adminService.adminService.dto;
 
 
 import jakarta.persistence.Basic;
@@ -16,8 +16,6 @@ public class AdminDto {
     private String name;
 
     private String surname;
-
-    private Instant lastMessageTime;
     
     private String document;
 

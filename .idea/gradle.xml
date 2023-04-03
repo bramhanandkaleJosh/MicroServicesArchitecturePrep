@@ -18,9 +18,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/adminService" />
-            <option value="$PROJECT_DIR$/adminService/common" />
-            <option value="$PROJECT_DIR$/adminService/docService" />
-            <option value="$PROJECT_DIR$/adminService/userService" />
           </set>
         </option>
       </GradleProjectSettings>

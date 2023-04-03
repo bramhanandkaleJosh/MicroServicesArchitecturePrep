@@ -7,18 +7,19 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
 @RestController
-//@RequestMapping(value = "/user")
+@RequestMapping(value = "/user")
 public class UserController {
 
     @Autowired
     UserService userService;
 
-    @PostMapping("/create")
+    @PostMapping(value = "/create")
     public ResponseEntity<?> createUser(@RequestBody AdminDto adminDto){
         return new ResponseEntity<>(userService.createUserService(adminDto), HttpStatus.OK);
     }

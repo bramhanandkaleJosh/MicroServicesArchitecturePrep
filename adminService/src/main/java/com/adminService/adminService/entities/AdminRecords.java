@@ -1,4 +1,4 @@
-package entities;
+package com.adminService.adminService.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -4,17 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="fixes added">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="user service issues fixed">
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/controllers/DocumentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/dao/DocumentsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/service/NewDocumentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dto/AdminDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/dto/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dto/ResponseVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dto/AdminDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dao/AdminDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/dto/AdminDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/dto/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dto/ResponseVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/entities/AdminRecords.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/entities/AdminRecords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/test/java/com/adminService/adminService/AdminServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/test/java/com/adminService/AdminServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/docService/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/DocServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/DocServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dao/DocumentsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dto/AdminDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dto/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/dto/ResponseVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/java/entities/Documents.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/entities/Documents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/test/java/com/docService/docService/DocServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/test/java/com/docService/DocServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +66,12 @@
         <task path="$PROJECT_DIR$/data/untitled">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/docService">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="adminService" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -112,9 +129,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_opened_file_path": "C:/Users/josh/IdeaProjects/MicroServicesArchitecturePrep/UserService/src/main/java",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -131,7 +148,12 @@
       <recent name="entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserServiceApplication">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.AdminServiceApplication">
     <configuration name="AdminServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.adminService.adminService.AdminServiceApplication" />
       <module name="adminService.main" />
@@ -141,31 +163,46 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DocServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.docService.docService.DocServiceApplication" />
-      <module name="docService.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.docService.docService.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.adminService.main.MainApplication" />
-      <module name="main.main" />
+    <configuration name="DocServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.docService.DocServiceApplication" />
+      <module name="docService.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.adminService.main.*" />
+          <option name="PATTERN" value="com.docService.DocService.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DocServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.docService.DocServiceApplication" />
+      <module name="docService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.docService.DocService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,7 +221,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests in 'userService'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/UserService" />
@@ -195,12 +232,33 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="docService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/docService" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -214,13 +272,20 @@
       <option name="AUTO_RESTART" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.UserServiceApplication" />
+      <item itemvalue="Application.AdminServiceApplication" />
+      <item itemvalue="Application.DocServiceApplication" />
+      <item itemvalue="Gradle.docService [build]" />
+      <item itemvalue="Gradle.UserService [build]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserServiceApplication" />
-        <item itemvalue="Gradle.Tests in 'userService'" />
-        <item itemvalue="Application.AdminServiceApplication" />
         <item itemvalue="Application.DocServiceApplication" />
-        <item itemvalue="Application.MainApplication" />
+        <item itemvalue="Application.DocServiceApplication" />
+        <item itemvalue="Gradle.docService [build]" />
+        <item itemvalue="Application.AdminServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680437255160</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="user service issues fixed">
+      <created>1680451185198</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680451185198</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,7 +378,8 @@
     <MESSAGE value="initial commit for checking" />
     <MESSAGE value="admin and user services added" />
     <MESSAGE value="fixes added" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes added" />
+    <MESSAGE value="user service issues fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="user service issues fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -315,11 +388,6 @@
           <url>file://$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java</url>
           <line>22</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java</url>
@@ -335,6 +403,31 @@
           <url>file://$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java</url>
           <line>51</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/controllers/AdminController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/AdminService.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/docService/src/main/java/com/docService/controllers/DocumentController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/docService/src/main/java/com/docService/service/NewDocumentService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/AdminService.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

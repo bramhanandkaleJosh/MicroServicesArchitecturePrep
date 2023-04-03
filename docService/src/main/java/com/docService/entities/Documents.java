@@ -1,31 +1,34 @@
-package entities;
+package com.docService.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import java.io.Serializable;
 import java.time.Instant;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 @NoArgsConstructor
 @Data
 @Entity
-public class Documents {
+public class Documents implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long documentId;
 
+    @NonNull
     @Basic
     private String name;
 
+    @NonNull
     @Basic
     private String documentType;
 
+    @NonNull
     @Basic
     private Long userId;
 
+    @NonNull
     @Basic
     private Instant createdTime;
 }

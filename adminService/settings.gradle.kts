@@ -1,2 +1,2 @@
 rootProject.name = "adminService"
-include("docService", "userService", "common")
+//include("docService", "userService", "common")

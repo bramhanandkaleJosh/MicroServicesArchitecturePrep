@@ -1,4 +1,4 @@
-package dto;
+package com.adminService.adminService.dto;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
