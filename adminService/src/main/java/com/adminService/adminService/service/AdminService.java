@@ -36,10 +36,11 @@ public class AdminService {
 
     public ResponseVO createUserAndSubmitDocs(AdminDto adminDto){
         ResponseVO responseVO = new ResponseVO("Failed", 400 , null, null);
+        String userServiceUrl = "http://localhost:8082";
         Long userId = 0l;
         try {
             HttpEntity request = new HttpEntity<>(adminDto);
-            ResponseEntity<ResponseVO> userResponse = restTemplate.postForEntity("http://localhost:8082/user/create", request, ResponseVO.class);
+            ResponseEntity<ResponseVO> userResponse = restTemplate.postForEntity(userServiceUrl+"/user/create", request, ResponseVO.class);
             ResponseVO userResponseVO = userResponse.getBody();
 
             adminDto.setUserId(Long.parseLong(userResponseVO.getData().get("userId").toString()));
@@ -57,11 +58,7 @@ public class AdminService {
                 responseVO.setStatus("Success");
                 responseVO.setData(objectMapper.convertValue(adminRecords, JsonNode.class));
             } else {
-                Map<String, Long> userData = new HashMap<>();
-                userData.put("userId", userId);
-                HttpEntity rollbackRequest = new HttpEntity(userData);
-                ResponseEntity<ResponseVO> userRollbackResponse = restTemplate.postForEntity("http://localhost:8080/user/rollback", rollbackRequest, ResponseVO.class);
-                responseVO.setMessage("docService is failed, so user transaction is rollbacked");
+                throw new RuntimeException("Document service failed to save document");
             }
 
         } catch (Exception e) {
@@ -69,7 +66,7 @@ public class AdminService {
             Map<String, Long> userData = new HashMap<>();
             userData.put("userId", userId);
             HttpEntity rollbackRequest = new HttpEntity(userData);
-            ResponseEntity<ResponseVO> userRollbackResponse = restTemplate.postForEntity("http://localhost:8082/user/rollback", rollbackRequest, ResponseVO.class);
+            restTemplate.postForEntity(userServiceUrl+"/user/rollback", rollbackRequest, ResponseVO.class);
             responseVO.setMessage("docService is failed, so user transaction is rollbacked");
         }
         return responseVO;

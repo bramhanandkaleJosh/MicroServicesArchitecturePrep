@@ -4,36 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="user service issues fixed">
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/controllers/DocumentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/dao/DocumentsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/service/NewDocumentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="doc service issues fixed and admin service url related issues also fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/dto/AdminDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/userService/UserService/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dao/AdminDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/dto/AdminDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/dto/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dto/ResponseVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/entities/AdminRecords.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/entities/AdminRecords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/test/java/com/adminService/adminService/AdminServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/test/java/com/adminService/AdminServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/docService/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/DocServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/DocServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dao/DocumentsDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dto/AdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dto/AdminDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/java/dto/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/dto/ResponseVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/java/entities/Documents.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/entities/Documents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/test/java/com/docService/docService/DocServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/test/java/com/docService/DocServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/AdminService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680451185198</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="doc service issues fixed and admin service url related issues also fixed">
+      <created>1680523890679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680523890679</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,7 +359,8 @@
     <MESSAGE value="admin and user services added" />
     <MESSAGE value="fixes added" />
     <MESSAGE value="user service issues fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="user service issues fixed" />
+    <MESSAGE value="doc service issues fixed and admin service url related issues also fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="doc service issues fixed and admin service url related issues also fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -426,7 +407,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/AdminService.java</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
