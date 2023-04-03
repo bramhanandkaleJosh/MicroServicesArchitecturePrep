@@ -37,6 +37,7 @@ public class AdminService {
     public ResponseVO createUserAndSubmitDocs(AdminDto adminDto){
         ResponseVO responseVO = new ResponseVO("Failed", 400 , null, null);
         String userServiceUrl = "http://localhost:8082";
+        String docServiceUrl = "http://localhost:8081";
         Long userId = 0l;
         try {
             HttpEntity request = new HttpEntity<>(adminDto);
@@ -45,7 +46,7 @@ public class AdminService {
 
             adminDto.setUserId(Long.parseLong(userResponseVO.getData().get("userId").toString()));
             userId= adminDto.getUserId();
-            ResponseEntity<ResponseVO> docResponse = restTemplate.postForEntity("http://localhost:8081/doc/saveDoc", request, ResponseVO.class);
+            ResponseEntity<ResponseVO> docResponse = restTemplate.postForEntity(docServiceUrl+"/doc/saveDoc", request, ResponseVO.class);
             ResponseVO docResponseVO = docResponse.getBody();
 
             if (docResponse.getBody().getStatusCode().equals(200)){
