@@ -68,7 +68,7 @@ public class AdminService {
             userData.put("userId", userId);
             HttpEntity rollbackRequest = new HttpEntity(userData);
             restTemplate.postForEntity(userServiceUrl+"/user/rollback", rollbackRequest, ResponseVO.class);
-            responseVO.setMessage("docService is failed, so user transaction is rollbacked");
+            responseVO.setMessage("docService is failed, so user transaction is rollbacked for userId : "+userId);
         }
         return responseVO;
     }
