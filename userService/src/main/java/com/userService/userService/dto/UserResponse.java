@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class AddUserResponse {
+public class UserResponse {
     private String status;
     private Integer statusCode;
     private JsonNode data;

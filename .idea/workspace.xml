@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="added document adding service in docService">
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dto/AdminRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dto/AdminResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/entity/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/repository/AdminRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/impl/AdminServiceImpl.java" afterDir="false" />
+    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="calling other microservices from main service using RestTemplate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/entity/Documents.java" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/entity/Documents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/dto/AddUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/dto/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/dto/AddUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/dto/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680587124770</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="calling other microservices from main service using RestTemplate">
+      <created>1680599180935</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680599180935</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -273,6 +278,7 @@
     <MESSAGE value="setting up user service" />
     <MESSAGE value="changed user response structure" />
     <MESSAGE value="added document adding service in docService" />
-    <option name="LAST_COMMIT_MESSAGE" value="added document adding service in docService" />
+    <MESSAGE value="calling other microservices from main service using RestTemplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="calling other microservices from main service using RestTemplate" />
   </component>
 </project>

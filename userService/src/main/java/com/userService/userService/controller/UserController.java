@@ -1,7 +1,7 @@
 package com.userService.userService.controller;
 
-import com.userService.userService.dto.AddUserRequest;
-import com.userService.userService.dto.AddUserResponse;
+import com.userService.userService.dto.UserRequest;
+import com.userService.userService.dto.UserResponse;
 import com.userService.userService.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,7 +16,12 @@ public class UserController {
     UserService userService;
 
     @PostMapping("/user/add")
-    public ResponseEntity<AddUserResponse> addUser(@RequestBody AddUserRequest addUserRequest){
-        return new ResponseEntity<>(userService.addUser(addUserRequest), HttpStatus.OK);
+    public ResponseEntity<UserResponse> addUser(@RequestBody UserRequest userRequest){
+        return new ResponseEntity<>(userService.addUser(userRequest), HttpStatus.OK);
+    }
+
+    @PostMapping("/user/rollback")
+    public ResponseEntity<UserResponse> addUser(@RequestBody Long userId){
+        return new ResponseEntity<>(userService.rollbackUserService(userId), HttpStatus.OK);
     }
 }

@@ -31,15 +31,16 @@ public class AdminServiceImpl implements AdminService {
     public AdminResponse submitUserAndDocs(AdminRequest adminRequest) {
         RestTemplate restTemplate = new RestTemplate();
         AdminResponse adminResponse = new AdminResponse("Failed", 400 , null, null);
-        String userServiceUrl = "http://localhost:8081/user/add";
+        String userServiceUrl = "http://localhost:8081";
         String docServiceUrl = "http://localhost:8082/doc/add";
+        long userId = 0L;
             try {
             HttpEntity request = new HttpEntity<>(adminRequest);
-            ResponseEntity<AdminResponse> userResponse = restTemplate.postForEntity(userServiceUrl, request, AdminResponse.class);
+            ResponseEntity<AdminResponse> userResponse = restTemplate.postForEntity(userServiceUrl+"/user/add", request, AdminResponse.class);
             AdminResponse user = userResponse.getBody();
 
             adminRequest.setUserId(Long.parseLong(user.getData().get("id").toString()));
-
+            userId = adminRequest.getUserId();
             ResponseEntity<AdminResponse> docResponse = restTemplate.postForEntity(docServiceUrl, request, AdminResponse.class);
             AdminResponse doc = docResponse.getBody();
 
@@ -59,9 +60,10 @@ public class AdminServiceImpl implements AdminService {
             log.error("Exception occurred in AdminService :: createUserAndSubmitDocs()", e);
 //            Map<String, Long> userData = new HashMap<>();
 //            userData.put("userId", userId);
-//            HttpEntity rollbackRequest = new HttpEntity(userData);
-//            restTemplate.postForEntity(userServiceUrl+"/user/rollback", rollbackRequest, ResponseVO.class);
-            adminResponse.setMessage("docService is failed, so user transaction is rollbacked for userId : ");
+
+            HttpEntity rollbackRequest = new HttpEntity(userId);
+            restTemplate.postForEntity(userServiceUrl+"/user/rollback", rollbackRequest, AdminResponse.class);
+            adminResponse.setMessage("docService is failed, so user transaction is rollbacked for userId : " + userId);
         }
         return adminResponse;
     }

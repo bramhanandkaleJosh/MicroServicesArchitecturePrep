@@ -17,10 +17,10 @@ public class Documents {
     @Column(name = "user_id", nullable = false)
     private long userId;
 
-    @Column(name = "document_name")
+    @Column(name = "document_name", nullable = false)
     private String docName;
 
-    @Column(name = "document_number", nullable = false)
+    @Column(name = "document_number", nullable = false, unique = true)
     private String docNumber;
 
 }

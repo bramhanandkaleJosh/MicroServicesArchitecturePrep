@@ -2,8 +2,8 @@ package com.userService.userService.service.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.userService.userService.dto.AddUserRequest;
-import com.userService.userService.dto.AddUserResponse;
+import com.userService.userService.dto.UserRequest;
+import com.userService.userService.dto.UserResponse;
 import com.userService.userService.entity.User;
 import com.userService.userService.repository.UserRepository;
 import com.userService.userService.service.UserService;
@@ -11,8 +11,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
 import java.util.Objects;
-import java.util.Optional;
 
 @Service
 @Slf4j
@@ -23,31 +23,50 @@ public class UserServiceImpl implements UserService {
     @Autowired
     ObjectMapper objectMapper;
 
-    public AddUserResponse addUser(AddUserRequest addUserRequest){
+    public UserResponse addUser(UserRequest userRequest){
 
-        AddUserResponse addUserResponse = new AddUserResponse("Failed", 400, null ,null);
+        UserResponse userResponse = new UserResponse("Failed", 400, null ,null);
         try{
-            if (Objects.nonNull(addUserRequest)){
+            if (Objects.nonNull(userRequest)){
                 User user = new User();
                 //Optional.ofNullable(addUserRequest.getFirstName()).ifPresent(user::setFirstName);
-                user.setFirstName(addUserRequest.getFirstName());
-                user.setLastName(addUserRequest.getLastName());
-                user.setEmail(addUserRequest.getEmail());
-                user.setContactNumber(addUserRequest.getContactNumber());
+                user.setFirstName(userRequest.getFirstName());
+                user.setLastName(userRequest.getLastName());
+                user.setEmail(userRequest.getEmail());
+                user.setContactNumber(userRequest.getContactNumber());
                 userRepository.save(user);
-                addUserResponse.setMessage("User Added Successfully");
-                addUserResponse.setStatus("Success");
-                addUserResponse.setStatusCode(200);
-                addUserResponse.setData(objectMapper.convertValue(user, JsonNode.class));
+                userResponse.setMessage("User Added Successfully");
+                userResponse.setStatus("Success");
+                userResponse.setStatusCode(200);
+                userResponse.setData(objectMapper.convertValue(user, JsonNode.class));
             }
         } catch (Exception e){
             log.info("Exception occurred while creating user: ", e);
-            addUserResponse.setStatus(e.getMessage());
-            addUserResponse.setMessage("Failed");
-            addUserResponse.setStatusCode(400);
-            addUserResponse.setData(null);
+            userResponse.setStatus(e.getMessage());
+            userResponse.setMessage("Failed");
+            userResponse.setStatusCode(400);
+            userResponse.setData(null);
         }
-        return addUserResponse;
+        return userResponse;
+    }
+
+    public UserResponse rollbackUserService(Long userId) {
+        UserResponse userResponse = new UserResponse("Failed", 400, null ,null);
+        try{
+            User user = userRepository.getReferenceById(userId);
+            if (Objects.nonNull(user.getId())){
+                userRepository.delete(user);
+                userResponse.setData(objectMapper.convertValue("User Rolledback", JsonNode.class));
+                userResponse.setStatus("Success");
+                userResponse.setStatusCode(200);
+            } else {
+                userResponse.setMessage("Record not found");
+            }
+        } catch (Exception e){
+            log.info("Exception occurred in UserService :: rollbackUserService()", e);
+            userResponse.setMessage(e.getMessage());
+        }
+        return userResponse;
     }
 
 }
