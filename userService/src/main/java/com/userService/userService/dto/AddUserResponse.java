@@ -1,17 +1,16 @@
 package com.userService.userService.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.fasterxml.jackson.databind.JsonNode;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class AddUserResponse {
-    private String statusCode;
+    private String status;
+    private Integer statusCode;
+    private JsonNode data;
     private String message;
-    private Long id;
-
 }
