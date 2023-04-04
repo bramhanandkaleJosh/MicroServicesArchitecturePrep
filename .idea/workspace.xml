@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="setting up user service">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/dto/AddUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/AddUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/impl/AddUserImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userService/src/main/resources/data.sql" afterDir="false" />
+    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="changed user response structure">
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/controller/DocController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/dto/DocRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/dto/DocResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/entity/Documents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/repository/DocumentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/service/DocService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/service/impl/DocServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.UserServiceApplication">
+  <component name="RunManager" selected="Application.DocServiceApplication">
     <configuration name="AdminServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.adminService.adminService.AdminServiceApplication" />
       <module name="adminService.main" />
@@ -233,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680167045926</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changed user response structure">
+      <created>1680581741123</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680581741123</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -258,6 +264,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="initial commit for checking" />
     <MESSAGE value="setting up user service" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting up user service" />
+    <MESSAGE value="changed user response structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed user response structure" />
   </component>
 </project>

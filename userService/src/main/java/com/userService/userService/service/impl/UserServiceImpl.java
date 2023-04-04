@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -22,41 +23,31 @@ public class UserServiceImpl implements UserService {
     @Autowired
     ObjectMapper objectMapper;
 
-
     public AddUserResponse addUser(AddUserRequest addUserRequest){
-//        User user = new User();
-//        user.setEmail(addUserRequest.getEmail());
-//        user.setDocName(addUserRequest.getDocName());
-//        user.setDocId(addUserRequest.getDocId());
-//        user.setLastName(addUserRequest.getLastName());
-//        user.setFirstName(addUserRequest.getFirstName());
-//        User saved = userRepository.save(user);
-//        AddUserResponse addUserResponse = new AddUserResponse();
-//        //String s = String.valueOf()
-//        addUserResponse.setMessage("Successfully added" + saved.getId());
-//        addUserResponse.setStatusCode("200");
-//        addUserResponse.setId(saved.getId());
-//        return addUserResponse;
 
         AddUserResponse addUserResponse = new AddUserResponse("Failed", 400, null ,null);
         try{
             if (Objects.nonNull(addUserRequest)){
-                //User user = new User(addUserRequest.getFirstName(), addUserRequest.getLastName(), addUserRequest.getEmail() ,addUserRequest.getContactNumber());
                 User user = new User();
+                //Optional.ofNullable(addUserRequest.getFirstName()).ifPresent(user::setFirstName);
                 user.setFirstName(addUserRequest.getFirstName());
                 user.setLastName(addUserRequest.getLastName());
                 user.setEmail(addUserRequest.getEmail());
                 user.setContactNumber(addUserRequest.getContactNumber());
                 userRepository.save(user);
+                addUserResponse.setMessage("User Added Successfully");
+                addUserResponse.setStatus("Success");
+                addUserResponse.setStatusCode(200);
                 addUserResponse.setData(objectMapper.convertValue(user, JsonNode.class));
             }
         } catch (Exception e){
-            log.info("Exception occurred in UserService :: createUserService()", e);
+            log.info("Exception occurred while creating user: ", e);
             addUserResponse.setStatus(e.getMessage());
+            addUserResponse.setMessage("Failed");
+            addUserResponse.setStatusCode(400);
+            addUserResponse.setData(null);
         }
-
         return addUserResponse;
-
     }
 
 }
