@@ -32,7 +32,7 @@ public class AdminServiceImpl implements AdminService {
         RestTemplate restTemplate = new RestTemplate();
         AdminResponse adminResponse = new AdminResponse("Failed", 400 , null, null);
         String userServiceUrl = "http://localhost:8081";
-        String docServiceUrl = "http://localhost:8082/doc/add";
+        String docServiceUrl = "http://localhost:8082";
         long userId = 0L;
             try {
             HttpEntity request = new HttpEntity<>(adminRequest);
@@ -41,7 +41,7 @@ public class AdminServiceImpl implements AdminService {
 
             adminRequest.setUserId(Long.parseLong(user.getData().get("id").toString()));
             userId = adminRequest.getUserId();
-            ResponseEntity<AdminResponse> docResponse = restTemplate.postForEntity(docServiceUrl, request, AdminResponse.class);
+            ResponseEntity<AdminResponse> docResponse = restTemplate.postForEntity(docServiceUrl+"/doc/add", request, AdminResponse.class);
             AdminResponse doc = docResponse.getBody();
 
             if (docResponse.getBody().getStatusCode().equals(200)){
@@ -53,14 +53,11 @@ public class AdminServiceImpl implements AdminService {
                 adminResponse.setStatus("Success");
                 adminResponse.setData(objectMapper.convertValue(admin, JsonNode.class));
             } else {
-                throw new RuntimeException("Document service failed to save document");
+                throw new RuntimeException("Exception while adding document --->>  Rolling Back User" + userId);
             }
 
         } catch (Exception e) {
-            log.error("Exception occurred in AdminService :: createUserAndSubmitDocs()", e);
-//            Map<String, Long> userData = new HashMap<>();
-//            userData.put("userId", userId);
-
+            log.error("Exception while adding", e);
             HttpEntity rollbackRequest = new HttpEntity(userId);
             restTemplate.postForEntity(userServiceUrl+"/user/rollback", rollbackRequest, AdminResponse.class);
             adminResponse.setMessage("docService is failed, so user transaction is rollbacked for userId : " + userId);
