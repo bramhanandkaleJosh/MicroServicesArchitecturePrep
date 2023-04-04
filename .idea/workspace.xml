@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="changed user response structure">
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/controller/DocController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/dto/DocRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/dto/DocResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/entity/Documents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/repository/DocumentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/service/DocService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docService/src/main/java/com/docService/docService/service/impl/DocServiceImpl.java" afterDir="false" />
+    <list default="true" id="23e0145c-e7cb-4015-a7c5-8b0b4b130e53" name="Changes" comment="added document adding service in docService">
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dto/AdminRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/dto/AdminResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/entity/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/repository/AdminRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/impl/AdminServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/userService/userService/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/adminService/adminService/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +61,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -115,7 +115,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.DocServiceApplication">
+  <component name="RunManager" selected="Application.AdminServiceApplication">
     <configuration name="AdminServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.adminService.adminService.AdminServiceApplication" />
       <module name="adminService.main" />
@@ -239,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680581741123</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added document adding service in docService">
+      <created>1680587124770</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680587124770</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -265,6 +272,7 @@
     <MESSAGE value="initial commit for checking" />
     <MESSAGE value="setting up user service" />
     <MESSAGE value="changed user response structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed user response structure" />
+    <MESSAGE value="added document adding service in docService" />
+    <option name="LAST_COMMIT_MESSAGE" value="added document adding service in docService" />
   </component>
 </project>
