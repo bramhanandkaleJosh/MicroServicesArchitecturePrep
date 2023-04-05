@@ -8,7 +8,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/UserService" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/UserService" />
+            <option value="$PROJECT_DIR$/userservice" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -17,16 +17,35 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/adminService" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/adminService" />
+            <option value="$PROJECT_DIR$/adminservice" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/docService" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/docService" />
+            <option value="$PROJECT_DIR$/common" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/docservice" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/docservice" />
+            <option value="$PROJECT_DIR$/docservice/common" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/userservice" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/userservice" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -1,4 +1,4 @@
-package dto;
+package com.userservice.dto;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import lombok.AllArgsConstructor;
@@ -16,5 +16,7 @@ public class ResponseVO {
     private Integer statusCode;
 
     private JsonNode data;
+
+    private String message;
 
 }
