@@ -19,7 +19,6 @@ import java.util.Objects;
 public class UserServiceImpl implements UserService {
     @Autowired
     UserRepository userRepository;
-
     @Autowired
     ObjectMapper objectMapper;
 
@@ -56,14 +55,14 @@ public class UserServiceImpl implements UserService {
             User user = userRepository.getReferenceById(userId);
             if (Objects.nonNull(user.getId())){
                 userRepository.delete(user);
-                userResponse.setData(objectMapper.convertValue("User Rolledback", JsonNode.class));
+                userResponse.setData(objectMapper.convertValue("User Rolled back", JsonNode.class));
                 userResponse.setStatus("Success");
                 userResponse.setStatusCode(200);
             } else {
                 userResponse.setMessage("Record not found");
             }
         } catch (Exception e){
-            log.info("Exception occurred in UserService :: rollbackUserService()", e);
+            log.info("Exception occurred Rolling back the user", e);
             userResponse.setMessage(e.getMessage());
         }
         return userResponse;

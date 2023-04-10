@@ -1,3 +1,5 @@
+import java.util.regex.Pattern.compile
+
 plugins {
 	java
 	id("org.springframework.boot") version "3.0.5"
@@ -27,6 +29,7 @@ dependencies {
 	runtimeOnly("com.mysql:mysql-connector-j")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+//	implementation(project("docService"))
 }
 
 tasks.withType<Test> {

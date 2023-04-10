@@ -24,6 +24,7 @@ public class AdminServiceImpl implements AdminService {
     @Autowired
     AdminRepo adminRepo;
 
+   // DocServiceImpl
     @Autowired
     ObjectMapper objectMapper;
 
@@ -60,7 +61,7 @@ public class AdminServiceImpl implements AdminService {
             log.error("Exception while adding", e);
             HttpEntity rollbackRequest = new HttpEntity(userId);
             restTemplate.postForEntity(userServiceUrl+"/user/rollback", rollbackRequest, AdminResponse.class);
-            adminResponse.setMessage("docService is failed, so user transaction is rollbacked for userId : " + userId);
+            adminResponse.setMessage("docService is failed, so user transaction is rolled back for userId : " + userId);
         }
         return adminResponse;
     }
